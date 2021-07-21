@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_keypad">
+
+    <fragment
+        android:id="@+id/navigation_keypad"
+        android:name="com.hrandika.android.komi.modulith.keypad.KeypadFragment"
+        android:label="@string/title_keypad"
+        tools:layout="@layout/fragment_keypad" />
+
+    <fragment
+        android:id="@+id/navigation_sim"
+        android:name="com.hrandika.android.komi.modulith.sim.SimFragment"
+        android:label="@string/title_sim"
+        tools:layout="@layout/fragment_sim" />
+
+    <fragment
+        android:id="@+id/navigation_rule"
+        android:name="com.hrandika.android.komi.modulith.rule.RuleFragment"
+        android:label="@string/title_rules"
+        tools:layout="@layout/fragment_rules" />
+</navigation>

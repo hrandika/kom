@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_keypad"
+        android:icon="@drawable/ic_dialpad_black_24dp"
+        android:title="@string/title_keypad" />
+
+    <item
+        android:id="@+id/navigation_sim"
+        android:icon="@drawable/ic_sim_card_24dp"
+        android:title="@string/title_sim" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_tune_24dp"
+        android:title="@string/title_rules" />
+
+</menu>

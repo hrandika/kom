@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clear_button"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/imageButton"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/call_button_width"
+        android:layout_height="@dimen/call_button_height"
+        android:elevation="0dp"
+        android:src="@drawable/ic_call_black_24dp"
+        tools:ignore="ContentDescription"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/provider_textView"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="Provider" />
+
+</LinearLayout>

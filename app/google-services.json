@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "398016357378",
+    "firebase_url": "https://komi-df9ed.firebaseio.com",
+    "project_id": "komi-df9ed",
+    "storage_bucket": "komi-df9ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398016357378:android:8a2f61bd4c58e0b8aef31b",
+        "android_client_info": {
+          "package_name": "com.hrandika.android.komi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398016357378-jds2pi144j7heqo8i375hssdt2ugc2mq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hrandika.android.komi",
+            "certificate_hash": "a5a3ae3f76b8ae2a25b011fe6b900da002167b07"
+          }
+        },
+        {
+          "client_id": "398016357378-5nm79fspbgtj83grq6ki33avkucp48mk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdoXVvJQAg72tt0hQtq-t1Hm4oZOYz-4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398016357378-5nm79fspbgtj83grq6ki33avkucp48mk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

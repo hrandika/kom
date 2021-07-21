@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Komi</string>
+    <string name="title_keypad">Keypad</string>
+    <string name="title_sim">Sims</string>
+    <string name="title_rules">Rules</string>
+    <string name="accessibility_service_label">Komi</string>
+    <string name="accessibility_service_description">Need to intercept the USSD respose</string>
+</resources>

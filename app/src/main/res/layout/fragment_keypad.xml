@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="keypadViewModel"
+            type="com.hrandika.android.komi.modulith.keypad.KeypadViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/number_pad"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:text="@{keypadViewModel.phoneNumber}" />
+
+        <com.hrandika.android.komi.modulith.keypad.padlayout.PadLayout
+            android:id="@+id/number_pad"
+            style="@style/PadLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFF"
+            custom:numColumns="3"
+            custom:numRows="5">
+
+            <com.hrandika.android.komi.modulith.keypad.padlayout.DialPadKey
+                android:id="@+id/button1"
+                style="@style/PadButtonStyle.Animation"
+                android:onClick="@{(v) -> keypadViewModel.onNumber(v)}"
+                custom:letterGone="false"
+                custom:numberText="1" />
+
+            <com.hrandika.android.komi.modulith.keypad.padlayout.DialPadKey
+                android:id="@+id/button2"
+                style="@style/PadButtonStyle.Animation"
+                android:onClick="@{(v) -> keypadViewModel.onNumber(v)}"
+                custom:letterText="ABC"
+                custom:numberText="2" />
+
+            <com.hrandika.android.komi.modulith.keypad.padlayout.DialPadKey
+                android:id="@+id/button3"
+                style="@style/PadButtonStyle.Animation"
+                android:onClick="@{(v) -> keypadViewModel.onNumber(v)}"
+                custom:letterText="DEF"
+                custom:numberText="3" />
+
+            <com.hrandika.android.komi.modulith.keypad.padlayout.DialPadKey
+                android:id="@+id/button4"
+                style="@style/PadButtonStyle.Animation"
+                android:onClick="@{(v) -> keypadViewModel.onNumber(v)}"
+                custom:letterText="GHI"
+                custom:numberText="4" />
+
+            <com.hrandika.android.komi.modulith.keypad.padlayout.DialPadKey
+                android:id="@+id/button5"
+                style="@style/PadButtonStyle.Animation"
+                android:onClick="@{(v) -> keypadViewModel.onNumber(v)}"
+                custom:letterText="JKL"
+                custom:numberText="5" />
+
+            <com.hrandika.android.komi.modulith.keypad.padlayout.DialPadKey
+                android:id="@+id/button6"
+                style="@style/PadButtonStyle.Animation"
+                android:onClick="@{(v) -> keypadViewModel.onNumber(v)}"
+                custom:letterText="MNO"
+                custom:numberText="6" />
+
+            <com.hrandika.android.komi.modulith.keypad.padlayout.DialPadKey
+                android:id="@+id/button7"
+                style="@style/PadButtonStyle.Animation"
+                android:onClick="@{(v) -> keypadViewModel.onNumber(v)}"
+                custom:letterText="PQRS"
+                custom:numberText="7" />
+
+            <com.hrandika.android.komi.modulith.keypad.padlayout.DialPadKey
+                android:id="@+id/button8"
+                style="@style/PadButtonStyle.Animation"
+                android:onClick="@{(v) -> keypadViewModel.onNumber(v)}"
+                custom:letterText="TUV"
+                custom:numberText="8" />
+
+            <com.hrandika.android.komi.modulith.keypad.padlayout.DialPadKey
+                android:id="@+id/button9"
+                style="@style/PadButtonStyle.Animation"
+                android:onClick="@{(v) -> keypadViewModel.onNumber(v)}"
+                custom:letterText="WXYZ"
+                custom:numberText="9" />
+
+            <com.hrandika.android.komi.modulith.keypad.padlayout.DialPadKey
+                android:id="@+id/button10"
+                style="@style/PadButtonStyle.Animation"
+                android:onClick="@{(v) -> keypadViewModel.onNumber(v)}"
+                custom:letterGone="false"
+                custom:numberText="*" />
+
+            <com.hrandika.android.komi.modulith.keypad.padlayout.DialPadKey
+                android:id="@+id/button11"
+                style="@style/PadButtonStyle.Animation"
+                android:onClick="@{(v) -> keypadViewModel.onNumber(v)}"
+                custom:letterText="+"
+                custom:numberText="0" />
+
+            <com.hrandika.android.komi.modulith.keypad.padlayout.DialPadKey
+                android:id="@+id/button12"
+                style="@style/PadButtonStyle.Animation"
+                android:onClick="@{(v) -> keypadViewModel.onNumber(v)}"
+                custom:letterGone="false"
+                custom:numberText="#">
+
+            </com.hrandika.android.komi.modulith.keypad.padlayout.DialPadKey>
+
+            <include
+                android:id="@+id/call0_button"
+                style="@style/PadButtonStyle"
+                layout="@layout/call_button"
+                android:onClick="@{() -> keypadViewModel.call0()}" />
+
+            <include
+                android:id="@+id/call1_button"
+                style="@style/PadButtonStyle"
+                layout="@layout/call_button"
+                android:onClick="@{() -> keypadViewModel.call1()}" />
+
+            <include
+                android:id="@+id/clear_button"
+                style="@style/PadButtonStyle"
+                layout="@layout/backspace_button"
+                android:onClick="@{() -> keypadViewModel.onBack()}"
+                android:onLongClick="@{(view) -> keypadViewModel.onBackLongPress(view)}" />
+
+        </com.hrandika.android.komi.modulith.keypad.padlayout.PadLayout>
+
+    </RelativeLayout>
+</layout>
